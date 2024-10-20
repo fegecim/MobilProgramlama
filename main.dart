@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp>{
               children: [
                 Container(
                   height: 200,
-                  width: 400,
+                  width: 155,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.cyan,
@@ -50,27 +50,29 @@ class _MyAppState extends State<MyApp>{
                 ),
                 Container(
                   height: 200,
-                  width: 200,
+                  width: 101,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.white,
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(4.0),
+                    padding: const EdgeInsets.all(8.0),
+                    child: Center(
                     child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                      onPressed: (){
-                        setState(() {
-                          goruntulenenMetin=textController1.text;
-                        });
-                      },
-                      child: Text(style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),"Yan Tarafa Ekle"),
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                        onPressed: (){
+                          setState(() {
+                            goruntulenenMetin=textController1.text;
+                          });
+                        },
+                        child: Text(style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),"EKLE"),
+                      ),
                     ),
                   ),
                 ),
                 Container(
                   height: 200,
-                  width: 400,
+                  width: 155,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.cyan,
@@ -88,7 +90,7 @@ class _MyAppState extends State<MyApp>{
               children: [
                 Container(
                   height: 200,
-                  width: 400,
+                  width: 155,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.lime,
@@ -108,28 +110,30 @@ class _MyAppState extends State<MyApp>{
                 ),
                 Container(
                   height: 200,
-                  width: 200,
+                  width: 101,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.white,
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(4.0),
+                    child: Center(
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                      onPressed: (){
-                        setState(() {
-                          listeIci.add(textController2.text);
-                          textController2.clear();
-                        });
-                      },
-                      child: Text(style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),"Yan Tarafa Ekle(List)"),
+                        onPressed: (){
+                          setState(() {
+                            listeIci.add(textController2.text);
+                            textController2.clear();
+                          });
+                        },
+                        child: Text(style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),"Ekle (List)"),
+                      ),
                     ),
                   ),
                 ),
                 Container(
                   height: 200,
-                  width: 400,
+                  width: 155,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width:1.0 ),
                     color: Colors.lime,
